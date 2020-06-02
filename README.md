@@ -26,6 +26,10 @@ sudo su - odoo13
 # Git pull source odoo ke /opt
 git clone https://www.github.com/odoo/odoo --depth 1 --branch 13.0 /opt/odoo13/odoo
 
+
+
+
+
 # Buat virtual env odoo biar terisolate
 cd /opt/odoo13
 python3 -m venv odoo-venv
