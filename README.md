@@ -91,7 +91,7 @@ sudo journalctl -u odoo13
 
 # akses user -> http://<your_domain_or_IP_address>:8069
 
-
+https://github.com/joni-yulisman/catatan/blob/master/Screenshot from 2020-06-02 13-45-52.png
 
 
 
