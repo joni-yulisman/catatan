@@ -45,8 +45,7 @@ mkdir /opt/odoo13/odoo-custom-addons
 sudo nano /etc/odoo13.conf
 
 ## isinya
-[options]
-; This is the password that allows database operations:
+[options] ; This is the password that allows database operations:
 admin_passwd = my_admin_passwd
 db_host = False
 db_port = False
