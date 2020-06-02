@@ -1,2 +1,2 @@
-# catatan
+# Instalasi Odoo
 catatan
