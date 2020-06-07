@@ -1,0 +1,9 @@
+# cara upload file ke github
+git config --global user.name "joni-yulisman"
+git config --global user.email "yulisman.islah4@gmail.com"
+git init
+git add .
+git commit -m "file pertama vb.net"
+git remote add origin <nama repository>
+git push origin master --force
+
