@@ -42,17 +42,34 @@ Konfigurasi settingan db dll
 sudo nano /etc/odoo13.conf
 
 isinya
-[options] ; This is the password that allows database operations: admin_passwd = my_admin_passwd db_host = False db_port = False db_user = odoo13 db_password = False addons_path = /opt/odoo13/odoo/addons,/opt/odoo13/odoo-custom-addons
-
+[options] ;
+This is the password that allows database operations: 
+admin_passwd = my_admin_passwd 
+db_host = False 
+db_port = False 
+db_user = odoo13 
+db_password = False
+addons_path = /opt/odoo13/odoo/addons,/opt/odoo13/odoo-custom-addons
 setting odoo13.service
 sudo nano /etc/systemd/system/odoo13.service
 
 isi
-[Unit] Description=Odoo13 Requires=postgresql.service After=network.target postgresql.service
+[Unit] 
+Description=Odoo13 
+Requires=postgresql.service 
+After=network.target
+postgresql.service
 
-[Service] Type=simple SyslogIdentifier=odoo13 PermissionsStartOnly=true User=odoo13 Group=odoo13 ExecStart=/opt/odoo13/odoo-venv/bin/python3 /opt/odoo13/odoo/odoo-bin -c /etc/odoo13.conf StandardOutput=journal+console
+[Service] 
+Type=simple 
+SyslogIdentifier=odoo13 
+PermissionsStartOnly=true 
+User=odoo13 
+Group=odoo13 
+ExecStart=/opt/odoo13/odoo-venv/bin/python3 /opt/odoo13/odoo/odoo-bin -c /etc/odoo13.conf StandardOutput=journal+console
 
-[Install] WantedBy=multi-user.target
+[Install] 
+WantedBy=multi-user.target
 
 setting systemctl -> u reload service
 sudo systemctl daemon-reload
