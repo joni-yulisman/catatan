@@ -7,3 +7,6 @@ git commit -m "file pertama vb.net"
 git remote add origin <nama repository>
 git push origin master --force
 
+#clone file github
+git clone
+
