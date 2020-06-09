@@ -1,0 +1,18 @@
+#cek gateway / DNS dari internet
+netstat -nr
+
+#ganti dns 
+vi /etc/resolv.conf
+nameserver 192.168.0.223  
+
+#shutdown -h now
+
+route del default -> ubah routing
+
+#ubah routing lainnya
+route add default gw 192.168.0.222
+
+#buat permanen link
+sudo ln -s /opt/utorrent/userver /usr/bin/userver
+
+the pirates bay -> website download semua nya via torrent
